@@ -30,8 +30,8 @@ var httpsServer = https.createServer(credentials, app);
 httpServer.listen(port, () => {
   console.log(`HTTP Server running on port ${port}`);
 });
-httpsServer.listen(443, () => {
-  console.log('HTTP Server running on port 443');
+httpsServer.listen(3001, () => {
+  console.log('HTTP Server running on port 3001');
 });
 httpServer.on('error', onError);
 httpServer.on('listening', onListening);
